@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="Ana Sanz, frontend developer, based in Spain, Website Portfolio")
+        link(rel="stylesheet", href="css/app.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js")
+
+        title Ana Sanz / Webportfolio
+    body#body
+        header.header
+            div.header-text
+                p.title Hello there
+                h1 I'm Ana Sanz
+            div.header-dev
+                a(href="#" id="dev-toggle")
+                    h2 FrontEnd Developer              
+            div.header-photo
+                a(href="#" id="photo-toggle")
+                    h2 Photographer<br/>Videomaker 
+        main
+            section.all-intro#trigger-intro
+                div.all-image#animate-image
+                    div.all-in
+                        img(src="./images/IMG_20200729_002055_2p.jpg", alt="photo of Ana Sanz(me)" class="all-in-img")
+                div.all-text#animate-text
+                    h2 About
+                    h3 Living in Palma de Mallorca, Spain
+                    p Self and quick learner, organized, versatile, curious and dedicated.
+                    p Passionate about technology innovations, sci-fi, games, books, human history, ecology, gastronomy.
+                    p Since 2012 working as freelancer on Graphic/WebDesign and Frontend.
+                    p Native brazilian portuguese, advanced english and spanish.
+                    p College in Product Design at Belas Artes de São Paulo.
+                .all-text#big-only
+                    h2 More About
+                    h3 Side Quests
+                    p In 2013 started short-courses in frontend and self taught code with Python, MySQL, Angularjs, MongoDB.
+                    p In the second semester of 2015 started a Master degree in Strategic and Innovation Design, but had to close to move to Japan.
+                    p 2016 to 2018 lived in Japan working together diferents Cultural Centers.
+                    p In 2016 started to self taught photography and videomaking.
+                    p From 2019 working also as Flamenco Dancer in the hotels of Mallorca, Spain.
+            section.main-intro#menu-sec
+                h2 Professional Experience
+                nav.menu-sub
+                    ul
+                        li
+                            a(href='#' id='dev-sec' class="sec-menu selected" role="button") FrontEnd Developer
+                        li 
+                            a(href='#' id='photo-sec' class='sec-menu' role="button") Photographer/VideoMaker
+                    //- menu for toggle also photo and webdeveloper
+                section#dev-intro.intro-toggle.main-dev.slide-on
+                    div.intro-out
+                        div.intro-img
+                            img(src="./images/sakura-1.jpg", alt="tango dancers, couple hugging")
+                        div.intro-text
+                            h3 Frontend Developer since 2013
+                            p Worked at the brazilian startup Mendelics for 2 years, 2013 and 2014, as graphic designer/art director and webdesigner/frontend developer.
+                            p In mid 2018 started work in Madrid as front-end developer at Prodigious Spain, with great companies like Mercedes, Garnier and Telefonica.
+                            p In April of 2019 moved to Palma de Mallorca where is now based, working as freelancer frontend.
+                            p From 2019 started to learn and developing with Vue.js.
+                            p Tools: HTML/Pug, CSS/Sass, JavaScript, GSAP, Gulp, Git. Basic in: Python, Vue.js, graphQL, MongoDB.
+                section#photo-intro.intro-toggle.main-photo
+                    div.intro-out
+                        div.intro-img
+                          img(src="./images/sakura-14.jpg", alt="tango dancers, woman on man arms")
+                        div.intro-text
+                            h3 Photographer Videomaker since 2015
+                            p In Japan, worked from 2016 to early 2017, at Tiempo Iberoamericano with video editing and filming, photography. 
+                            p And from 2017 to early 2018 at Flamenco Studio Los Lunares with video editing and filming, photography and design.
+                            p In 2018 moved to Spain and started to work with musicians and dancers with photography and videographer.
+                            p In 2019 started to work as photographer and videomaker at Triana Productions, flamenco music and dance company.
+                            p Tools: Illustrator, Photoshop, InDesign, Premiere Pro, After Effects, DaVinci Resolve, Lightroom.
+            //- section.main-gallery#main-gallery
+            //-     p.principal Jobs Gallery
+            //-     div.box-in
+            //-         div.box-content#content-1
+            //-             img(src="images/flamenco_photo.jpg", alt="")
+            //-             p Flamenco / Photos
+            //-         div.box-content.video#WSpCYsdggxk(style="transform: scale(1.2)")
+            //-             p Louise / Music Video
+            //-             img(src="images/louise_photo.jpg", alt="")
+            //-         div.box-content#content-3(style="bottom: 0; top: auto;transform: scale(.8)")
+            //-             img(src="images/dance_phot.jpg", alt="")
+            //-             p Dance Shows / Photos
+            //-         div.box-content.video#2piYXRX3CvI
+            //-             p Modern Dance / Music Video
+            //-             img(src="images/modern_photo.jpg", alt="")
+            //-         div.box-content#content-5(style="transform: scale(1.2);bottom: -32%; top: initial;")
+            //-             img(src="images/maroco-photo.jpg", alt="")
+            //-             p Maroko / Photos
+            //-         div.box-content.video#v-iqCyFATxc
+            //-             p Erotik Dance / Music Video
+            //-             img(src="images/erotik_photo.jpg", alt="")
+                //- div.container-arrow.in-over
+                //-     p.arrow.right <>
+                //- photos in galery style 
+            section#github.github
+                .container
+                    h2 GitHub Profile
+                    h3 Code Projects
+                    div#gh-profile
+            section.contact#contact
+                .container
+                    h2 Contact
+                    h3 Leave me a message
+                    p anaclaulp@gmail.com
+                    p +34 695749730
+                    a(href="https://linkedin.com/in/ana-claudia-sanz/") LinkedIn
+                    a(href="https://landing.jobs/profile/2e3cb6703e48a889148669") Landing.Jobs
+
+            //- .modals-base
+            //-     .modal#modal-0
+            //-         .overlay
+            //-         .modal-content
+            //-             div.photos-out
+            //-                 div.photos-inner
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="")
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?random=1", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?random=2", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="")  
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?random=3", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="") 
+            //-             button.close-modal X
+            //-             .container-arrow
+            //-                 .arrow <>
+            //- .modals-base
+            //-     .modal
+            //-         .overlay
+            //-         .modal-content
+            //-             div.video-stretch#modal-1
+            //-             button.close-modal.video X
+            //- .modals-base
+            //-     .modal#modal-2
+            //-         .overlay
+            //-         .modal-content
+            //-             div.photos-out
+            //-                 div.photos-inner
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="")
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?random=1", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?random=2", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="")  
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?random=3", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="") 
+            //-             button.close-modal X
+            //- .modals-base
+            //-     .modal
+            //-         .overlay
+            //-         .modal-content
+            //-             div.video-stretch#modal-3
+            //-             button.close-modal.video X
+            //- .modals-base
+            //-     .modal
+            //-         .overlay
+            //-         .modal-content
+            //-             div.photos-out
+            //-                 div.photos-inner
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="")
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?random=1", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?random=2", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="")  
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?random=3", alt="") 
+            //-                     img.gallery-img(src="https://picsum.photos/250/400?grayscale", alt="") 
+            //-             button.close-modal X
+            //- .modals-base
+            //-     .modal
+            //-         .overlay
+            //-         .modal-content
+            //-             div.video-stretch#modal-5
+            //-             //- p oh shiting six!
+            //-             button.close-modal.video X
+        footer
+            //- contact informations
+            script(src="js/src/js/app.min.js")
+            script(src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.3/dist/basicLightbox.min.js")
